@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <title>Main</title>
+</head>
+<body class="relative overflow-x-hidden">
+    <div class="w-[100vw]">
+
+        <!-- Top Bar -->
+        <div class="h-[65vh] max-md:h-[50vh] bg-[#062E50] max-md:w-[100vw]">
+            <div class="h-[10vh] p-2 pl-6 pr-6 bg-[#57A61C] text-white flex justify-between items-center max-md:pl-2 max-md:pr-2">
+                <div class="flex items-center gap-10 font-bold text-lg max-md:font-normal max-md:text-sm max-md:flex-col max-md:gap-1">
+                    <h1>Kolkata, India</h1>
+                    <h1>GST:01EMJPA0005A</h1>
+                </div>
+
+                <!-- Send Mail (Hidden on md and larger) -->
+                <div class="md:block hidden">
+                    <a href="mailto:kumar.adit024@gmail.com" class="mail-link hover-effect font-normal text-xl"
+                    ><i class="ri-mail-send-line text-2xl"></i> SEND MAIL →</a>
+                </div>
+
+                <!-- Hamburger Menu Icon -->
+                <div class="md:hidden flex">
+                    <button id="menu-toggle" class="text-white text-2xl">
+                        <i class="ri-menu-line"></i> <!-- Menu Icon -->
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logo & Navbar -->
+            <div class="flex items-baseline p-4 justify-between px-10 max-md:px-1 max-md:p-1 text-white">
+                <div class="flex items-center gap-1 max-md:p-5">
+                    <a href="/">
+                        <img class="w-[14vw] max-md:w-[37vw]" src="/images/Logo.png" alt="">
+                    </a>               
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="flex gap-10 text-xl max-md:hidden ">
+                   <p><a href="/home">Home</a></p>
+                   <p><a href="/vision">Our Vision</a></p>
+                    <p><a href="/mission">Our Mission</a></p>
+                    <p><a href="/sectors">Sectors</a></p>
+                    <p><a href="/contacts">Contacts</a></p>
+                </div>
+            </div>
+   <hr> 
+            <!-- Mobile Dropdown Menu (Initially Hidden) -->
+            <div id="mobile-menu" class="hidden flex flex-col bg-[#062E50] text-white p-4 space-y-2 absolute w-full left-0 top-16 shadow-lg">
+                <a href="/home" class="block p-2 hover:bg-[#4a8f1a]">Home</a>
+                <a href="/vision" class="block p-2 hover:bg-[#4a8f1a]">Our Vision</a>
+                <a href="/mission" class="block p-2 hover:bg-[#4a8f1a]">Our Mission</a>
+                <a href="/sectorsMobile" class="block p-2 hover:bg-[#4a8f1a]">Sectors</a>
+                <a href="/contacts" class="block p-2 hover:bg-[#4a8f1a]">Contacts</a>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="w-[85vw] h-[60vh] mt-6 max-md:h-[25vh]">
+                    <img class="w-full h-full rounded-br-[6vw] rounded-tl-[6vw] object-cover"  src="/images/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", function(event) {
+            mobileMenu.classList.toggle("hidden"); // Toggle menu visibility
+        });
+
+    </script>
+</body>
+</html>

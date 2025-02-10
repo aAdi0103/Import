@@ -1,0 +1,63 @@
+<%- include('./partials/Header') %>
+
+<div class="mt-[25vh] p-10 max-md:p-3 flex flex-col gap-16 max-md:mt-0">
+    <div class="flex gap-8 ml-[4vw] max-md:ml-[0vw]">
+        <div class="flex items-center gap-2 max-md:p-2">
+            <img class="w-[20vw] max-md:w-[45vw]" src="/images/Color LOgo.png" alt="Logo">              
+        </div>
+
+        <div class="text-xl text-zinc-600 max-md:text-xs max-md:mt-3 max-md:mr-[9vw]">
+            <p>Gumo Shaw Para Road, </p>
+            <p>P.O: Batanagar, P.S: Maheshtala,</p>
+            <p>Kolkata, West Bengal 700140, India</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col ml-[4vw] max-md:ml-[0vw] gap-2 max-md:text-sm max-md:mt-[-20px]">
+        <h1 class="font-extrabold text-2xl">CONTACT</h1>
+        <p class="text-xl"><i class="ri-contacts-fill"></i> Contact: 1234567890</p>
+        <a class="text-blue-500 text-xl" href="mailto:kumar.adit024@gmail.com" class="mail-link hover-effect font-normal text-xl"
+        ><i class="ri-mail-send-line text-2xl font-xl"></i> SEND MAIL →</a>
+        <p class="text-xl"> <i class="ri-phone-line"></i> Mobile: 1234567890</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-[90vw] self-center border-4">
+        <h2 class="text-2xl font-bold text-center">Contact With an  Expert!!</h2>
+     <p class="text-center mb-3 text-zinc-600">Fill out your information & our representive will reach out to assist you</p>
+        <form action="mailto:kumar.adit024@gmail.com" method="POST" enctype="text/plain">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="First Name" class="border p-2 rounded w-full" placeholder="First Name" required>
+                <input type="text" name="Last Name" class="border p-2 rounded w-full" placeholder="Last Name" required>
+                <input type="email" name="Email" class="border p-2 rounded w-full" placeholder="Email Address" required>
+                <input type="text" name="Organization" class="border p-2 rounded w-full" placeholder="Organization" required>
+                <input type="tel" name="WhatsApp Number" class="border p-2 rounded w-full" placeholder="WhatsApp Number" required>
+                <select name="Country" class="border p-2 rounded w-full">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-yellow-500 text-white p-2 rounded w-[20vw] ml-[39%] mt-4 hover:bg-blue-600">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<%- include('./partials/Footer') %>
+
+
+
+
+
+
+
+
+
+
+
+
